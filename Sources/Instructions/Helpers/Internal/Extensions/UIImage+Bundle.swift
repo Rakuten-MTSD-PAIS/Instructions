@@ -24,7 +24,7 @@ import UIKit
 
 extension UIImage {
     convenience init?(namedInInstructions: String) {
-        self.init(named: namedInInstructions, in: Bundle(for: CoachMarkView.self),
+        self.init(named: namedInInstructions, in: Bundle.module,
                   compatibleWith: nil)
     }
 }
